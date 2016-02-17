@@ -1,0 +1,15 @@
+{
+  "name": "drupal-bootstrap",
+  "homepage": "http://rsmccloskey.me",
+  "authors": [
+    "Riley McCloskey <rsmccc@iastate.edu>"
+  ],
+  "description": "initial foray into building a drupal site plus bootstrap cuz yay",
+  "main": "",
+  "moduleType": [],
+  "license": "none",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
