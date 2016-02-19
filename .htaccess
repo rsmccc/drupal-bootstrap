@@ -69,6 +69,12 @@ AddEncoding gzip svgz
 <IfModule mod_rewrite.c>
   RewriteEngine on
 
+  # RSM 2-18-16: files to let through (ignore)
+  RewriteCond %{REQUEST_URI} "/analytics/" [OR]
+  RewriteCond %{REQUEST_URI} "/static/"
+  RewriteRule (.*) $1 [L]
+  ## end riley addition
+
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
   # if you enable "www." stripping or enforcement, in order to ensure that
   # you don't bounce between http and https.
